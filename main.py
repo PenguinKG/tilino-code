@@ -35,7 +35,7 @@ def main():
 
     for i in range(20):
         response = client.chat.completions.create(
-            model="openrouter/free",
+            model="gemini-3.8-flash",
             messages=messages,
             tools=available_functions,
         )
