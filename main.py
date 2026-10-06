@@ -35,7 +35,7 @@ def main():
 
     for i in range(20):
         response = client.chat.completions.create(
-            model="gemini-3.8-flash",
+            model="gemini-3.1-flash-lite",
             messages=messages,
             tools=available_functions,
         )
