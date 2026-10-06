@@ -10,12 +10,12 @@ import prompts
 from call_function import available_functions, call_function
 
 load_dotenv()
-api_key = os.environ.get("OPENROUTER_API_KEY")
+api_key = os.environ.get("GEMINI_API_KEY")
 if not api_key:
     raise RuntimeError("No API key found")
 
 client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
     api_key=api_key,
 )
 
